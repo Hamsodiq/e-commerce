@@ -1,0 +1,294 @@
+body{
+    font-family: "Poppins";
+  }
+  
+  
+.number1 {
+    /* width: 100%; */
+    background-color: #020202;
+    /* height: 30px; */
+    border-radius: 0%;
+    padding: 1px 0px;
+    font-size: 12px;
+    /* padding-bottom: 15px; */
+}
+  
+ul{
+    list-style: none;
+}
+  
+.number1 ul{
+    display: flex;
+    color: #fff;
+    font-weight: 500;
+    justify-content: space-around;
+}       
+  
+  
+.number1 span{
+    color: darkgray
+}
+  
+#contactUsLi{
+    color: #fff;
+    border-bottom: 1px solid;
+}
+  
+header {
+    width:100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.logo{
+    display: inline;
+}
+  
+ul li a{
+    text-decoration: none;
+    color: #020202;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+} 
+  
+ul li a:hover{
+    color: #ff7200;    
+}
+
+#svg{
+  display: flex;
+}
+
+.iconlogo{
+  margin-left: 20px;
+  align-self: center;
+}
+  
+  
+#home{
+    border: 0cap;
+    margin-top: 10px;
+    background-color: #fff;
+    
+}
+  
+.nav_links li {
+    display: inline;
+    margin: 0px 12px;
+    /* padding: 0px 20px; */
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#ourDeal{
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+    color: #0156FF;
+    border-radius: 20px;
+    border-color: #0156FF;
+    margin-left: 8px;
+}
+  
+hr{
+  border-top: 1px solid #CACDD8;
+}
+
+/* #containerForAllDiv{
+
+}
+
+#containerForAllDiv nav ul li{
+    text-decoration: none;
+    transition: none;
+} */
+
+
+
+#containerForAllDiv{
+    background-color: #FFFFFF;
+    display: flex;
+    border-bottom: 1px solid;
+    border-color: #CACDD8;
+    margin-top: 50px;
+    
+}
+
+#laptopStyle{
+    background-color: #0156FF;
+    height: 37px;
+    width: 8%;
+    color: #fff;
+    border: #0156FF 1px solid;
+    border-radius: 100px;
+}
+
+#firstdiv{
+    width: 20%;
+    border-right: 1px solid;
+    border-color: #CACDD8;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 250%;
+}
+
+.divTwo_Three{
+    width: 15%;
+    background-color: #fff;
+    border-right: 1px solid;
+    border-color:  #CACDD8;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 250%;
+}
+
+#s{
+    background-color: #F5F7FF;
+    display: block;
+}
+
+
+#divFourFive{
+    display: flex;
+    padding-left: 10px;
+    justify-content: space-between;
+}
+
+#text{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+
+.itemContainer{
+ display: block;
+}
+
+.itemContainer .itemImage{
+    display: block;
+    justify-self: center;
+}
+
+#divFive{
+    margin-left: 21px;
+}
+
+#imgdiv{
+    display: flex;
+   
+}
+
+.ImgDivContainer{
+    width: 14.8%;
+}
+
+#serviceList{
+    background-color: #F5F7FF;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 44px 0;
+    margin-top: 58px;
+  
+  }
+  
+  .service{
+    text-align: center;
+    display: inline-block;
+   
+  }
+  
+  .blogo{
+    margin-left: 17px;
+    margin-top: 20px;
+  }
+  
+  
+  
+  #last {
+    background-color: #020202;
+    color: #fff;
+    padding: 50px 0px;
+  }
+  
+  #signUpFooterHeader{
+    font-size: 38px;
+    font-weight: 500;
+    color: #FFFFFF;
+    
+    
+    
+  }
+  
+  #signUpFooterLastHeader{
+    font-size: 16px;
+    font-weight: 300;
+   
+  }
+  
+  #srchInput{
+  width: 350px;
+  height: 40px;
+  padding-left: 8px;
+  border: 1px solid;
+  border-color: #FFFFFF;
+  background-color: #000000;
+  color: #fff;
+  }
+  
+  #srchbtn{
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #0156FF;
+    border-radius: 20px;
+    border-color: #0156FF;
+    margin-left: 8px;
+    
+  }
+  
+  #sign{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  #secondfooterdiv{
+    justify-content: space-evenly;
+    display: flex;
+    margin-top: 40px;
+  }
+  
+  
+  .footer{
+    font-size: 14px;
+    
+  }
+  .footer span{
+   color: #FFFFFF;
+   font-size: 14px;
+   font-weight: 500;
+  }
+  
+  .footerList{
+    font-size: 13px;
+    font-weight: 400;
+  }
+  
+  .footer .sameFooterHeader{
+    color: #FFFFFF80;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+  }
+  
+  #sametext{
+    color: #0156FF;
+  }
+
+
