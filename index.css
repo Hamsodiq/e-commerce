@@ -1,59 +1,60 @@
 body{
-    font-family: "Poppins";
-  }
+  font-family: "Poppins";
+}
   
   
 .number1 {
-    /* width: 100%; */
-    background-color: #020202;
-    /* height: 30px; */
-    border-radius: 0%;
-    padding: 1px 0px;
-    font-size: 12px;
-    /* padding-bottom: 15px; */
+  /* width: 100%; */
+  background-color: #020202;
+  /* height: 30px; */
+  border-radius: 0%;
+  padding: 1px 0px;
+  font-size: 12px;
+  /* padding-bottom: 15px; */
 }
   
 ul{
-    list-style: none;
+  list-style: none;
 }
   
 .number1 ul{
-    display: flex;
-    color: #fff;
-    font-weight: 500;
-    justify-content: space-around;
+  display: flex;
+  color: #fff;
+  font-weight: 500;
+  justify-content: space-between;
+  padding: 0px 40px;
 }       
   
   
 .number1 span{
-    color: darkgray
+  color: darkgray
 }
   
 #contactUsLi{
-    color: #fff;
-    border-bottom: 1px solid;
+  color: #fff;
+  border-bottom: 1px solid;
 }
   
 header {
-    width:100%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  width:100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
   
 .logo{
-    display: inline;
+  display: inline;
 }
   
 ul li a{
-    text-decoration: none;
-    color: #020202;
-    font-weight: bold;
-    transition: 0.4s ease-in-out;
+  text-decoration: none;
+  color: #020202;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
 } 
   
 ul li a:hover{
-    color: #ff7200;    
+  color: #ff7200;    
 }
 
 #svg{
@@ -67,28 +68,28 @@ ul li a:hover{
   
   
 #home{
-    border: 0cap;
-    margin-top: 10px;
-    background-color: #fff;
+  border: 0cap;
+  margin-top: 10px;
+  background-color: #fff;
     
 }
   
 .nav_links li {
-    display: inline;
-    margin: 0px 12px;
-    /* padding: 0px 20px; */
-    font-size: 14px;
-    font-weight: 500;
+  display: inline;
+  margin: 0px 12px;
+  /* padding: 0px 20px; */
+  font-size: 14px;
+  font-weight: 500;
 }
 
 #ourDeal{
-    width: 100px;
-    height: 40px;
-    font-size: 14px;
-    color: #0156FF;
-    border-radius: 20px;
-    border-color: #0156FF;
-    margin-left: 8px;
+  width: 100px;
+  height: 40px;
+  font-size: 14px;
+  color: #0156FF;
+  border-radius: 20px;
+  border-color: #0156FF;
+  margin-left: 8px;
 }
   
 hr{
@@ -140,13 +141,14 @@ form{
   border-color: #A2A6B0;
 }
 
-#SignIn{
+#signIn{
 width: 100px;
 height: 40px;
 font-size: 14px;
 color: #fff;
 background-color: #0156FF;
 border-radius: 20px;
+border: 1px solid #0156FF;
 border-color: #0156FF;
 margin-top: 15px;
 }
@@ -164,6 +166,7 @@ margin-top: 15px;
   font-size: 14px;
   color: #fff;
   background-color: #0156FF;
+  border: 1px solid #0156FF;
   border-radius: 20px;
   border-color: #0156FF;
   margin-top: 30px;
@@ -229,6 +232,7 @@ color: #fff;
   font-weight: 600;
   color: #fff;
   background-color: #0156FF;
+  border: 1px solid #0156FF;
   border-radius: 20px;
   border-color: #0156FF;
   margin-left: 8px;

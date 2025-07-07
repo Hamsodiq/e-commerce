@@ -21,7 +21,8 @@ ul{
     display: flex;
     color: #fff;
     font-weight: 500;
-    justify-content: space-around;
+    padding: 0px 60px;
+    justify-content: space-between;
 }       
   
   
@@ -75,7 +76,7 @@ ul li a:hover{
   
 .nav_links li {
     display: inline;
-    margin: 0px 12px;
+    margin: 0px 17px;
     /* padding: 0px 20px; */
     font-size: 14px;
     font-weight: 500;
@@ -183,6 +184,7 @@ p{
     font-weight: 600;
     font-size: 14px;
     color: #FFFFFF;
+    border: 1px solid #0156FF;
     background-color: #0156FF;
     border-color: #0156FF;
     border-radius: 50px;
@@ -248,6 +250,7 @@ p{
     font-weight: 600;
     color: #fff;
     background-color: #0156FF;
+    border: 1px solid #0156FF;
     border-radius: 20px;
     border-color: #0156FF;
     margin-left: 8px;

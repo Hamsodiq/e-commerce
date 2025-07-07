@@ -96,73 +96,205 @@ hr{
   border-top: 1px solid #CACDD8;
 }
 
-#homeHeader{
-  margin-left: 50px;
-}
-
-.aboutUsContainer{
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  padding: 149px 0;
-  /* height: 400px; */
-  align-items: center;
-}
-
-.withBlackBackground{
-  background-color: black;
-  color: white;
-}
-
-.titleInAboutUsContainer{
-  font-size: 44px;
-  font-weight:500;
-}
-
-.captionInAboutUsContainer{
-  font-size: 18px;
-  font-weight:300;
-  line-height: 26px;
-}
-
-#reviewContainer{
-  margin: 63px 0px;
-  justify-self: center;
-  background-color: #F5F7FF;
-  padding: 46px 119px;
-}
-
-#reviewText{
-  font-size: 18px;
-  font-weight: 400;
-}
-
-#reviewName{
-  /* background-color: #020202; */
-  justify-self: end;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-#reviewFooter{
+#aboutProductNav{
   display: flex;
   justify-content: space-between;
 }
 
-#dotContainer{
-  display: flex;
+#onSaleDiv{
+  padding-right: 50px;
 }
 
-.dot{
-  height: 12px;
-  width: 12px;
-  background-color: #CACDD8;
-  border-radius: 30px;
-  margin-right: 10px;
+#qty{
+  width: 30px;
+
 }
 
-.activeDot{
+#paypalBtn{
+  background-color: #FFB800;
+  width: 140px;
+  height: 50px;
+  border: 1px solid #FFB800;
+  border-radius: 50px;
+}
+
+#addToCartBtn{
   background-color: #0156FF;
+  color: #fff;
+  width: 140px;
+  height: 50px;
+  border: 1px solid #0156FF;
+  border-radius: 50px;
+}
+
+.myItemContainer{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  
+}
+
+#itemLeftContainer{
+  background-color: #F5F7FF;
+}
+
+#homeContainer{
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+#itemName{
+  display: block;
+  font-size: 32px;
+  font-weight: 500;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+#reviewProductTxt{
+  display: block;
+  color: #0156FF;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+#itemInfo{
+  display: block;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 25px;
+  margin-bottom: 45px;
+}
+
+#blackColorBtn{
+  width: 31px;
+  height: 31px;
+  background-color: #4B4D4F;
+  border-radius: 50px;
+  border: 1px solid #0156FF;
+  border-width: 2px;
+}
+
+#whiteColorBtn{
+  background-color: #EAE8EB;
+  width: 31px;
+  height: 31px;
+  border-radius: 50px;
+  border: 1px solid #EAE8EB;
+  border-width: 2px;
+}
+
+#colorBtn{
+  background-color: #F2E9DC;
+  width: 31px;
+  height: 31px;
+  border-radius: 50px;
+  border: 1px solid #F2E9DC;
+  border-width: 2px;
+}
+
+#questionDiv{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#learMoreFooter{
+    color: #272560;
+    padding-left: 10px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#blueDot{
+  background-color: #0156FF;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  border: 1px solid #0156FF;
+  border-width: 2px;
+}
+
+.whiteDot{
+  background-color: #EAE8EB;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  border: 1px solid #EAE8EB;
+  border-width: 2px;
+}
+
+#colorContainer{
+  text-align: right;
+}
+
+#secondContainer{
+  display: flex;
+  justify-content: space-between;
+  background-color: #020202;
+  color: #fff;
+  padding-left: 50px;
+  padding-top: 30px;
+}
+
+#outplayHeader{
+  display: block;
+  font-size: 44px;
+  font-weight: 500;
+}
+
+#experienceTxt{
+  display: block;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+#thirdContainer{
+  display: flex;
+  justify-content: space-around;
+}
+
+#faqContainer{
+  margin-top: 100px;
+}
+.productS{
+  /* display: flex;
+  justify-content: space-between; */
+  border: 1px solid #CACDD8;
+  width: 347px;
+  height: 56px;
+  text-align: center;
+  align-content: center;
+  margin-bottom: 30px;
+}
+
+.arrow{
+  padding-left: 50px;
+}
+
+#FeatuesDiv{
+  text-align: center;
+  background-color: #020202;
+  color: #fff;
+  padding-top: 50px;
+}
+
+#featuesHeader{
+  display: block;
+  font-size: 38px;
+  font-weight: 500;
+}
+
+#pInfo{
+  display: block;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 28px;
+  margin-bottom: 50px;
 }
 
 #serviceList{
@@ -270,6 +402,3 @@ color: #fff;
 #sametext{
   color: #0156FF;
 }
-
-
-
