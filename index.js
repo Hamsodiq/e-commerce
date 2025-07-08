@@ -7,12 +7,20 @@ function validate(e) {
     
     let email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
-    console.log(email);
-    console.log(password);
 
+    const user = users.find((user) => user.email === email);
+    if (!user) {
+        // respond with invalid login details
+       return;
+    }
+
+    if (user.password !== password) {
+        // respond with invalid login details
+        return;
+    }
+
+    loggedInUser = user;
 }
-
-
 
 // if (email === 'tola@gmail.com' && password === 'tola')
     // {
