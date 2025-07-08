@@ -1,18 +1,25 @@
-function validate() {
+window.onload=function(){
+    document.getElementById("loginForm").addEventListener("submit", validate);
+}
+
+function validate(e) {
+    e.preventDefault();
+    
     let email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
     console.log(email);
     console.log(password);
 
-    if (email === 'tola@gmail.com' && password === 'tola')
-    {
-        alert('Login successfully!');
-    } else {
-        alert('Login failed');
-    }
 }
 
 
+
+// if (email === 'tola@gmail.com' && password === 'tola')
+    // {
+    //     alert('Login successfully!');
+    // } else {
+    //     alert('Login failed');
+    // }
 
 
 // const emailField = document.getElementById('email');
