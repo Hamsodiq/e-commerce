@@ -1,5 +1,8 @@
+import {users} from './js/data/data_repository.js'
+
 window.onload=function(){
     document.getElementById("loginForm").addEventListener("submit", validate);
+
 }
 
 function validate(e) {
@@ -7,20 +10,49 @@ function validate(e) {
     
     let email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
+    const myemail = document.getElementById('emailCheck');
+    const myPassword = document.getElementById('passwordCheck');
 
     const user = users.find((user) => user.email === email);
     if (!user) {
         // respond with invalid login details
+        console.log("Email addresses do not match.");
+        myemail.innerHTML = 'Email addresses do not match.';
+        myemail.style.color = 'red';
+
        return;
     }
 
     if (user.password !== password) {
         // respond with invalid login details
+        myPassword.innerHTML = 'password do not match.';
+        myPassword.style.color = 'red';
+
         return;
     }
 
     loggedInUser = user;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // if (email === 'tola@gmail.com' && password === 'tola')
     // {

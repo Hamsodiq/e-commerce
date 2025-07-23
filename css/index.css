@@ -153,6 +153,12 @@ border-color: #0156FF;
 margin-top: 15px;
 }
 
+.home{
+  border: none;
+  background-color: #F5F7FF;
+
+}
+
 #ForgotPassword{
   color: #0156FF;
   border: none;

@@ -7,9 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="index.js"></script>
-    <script src="js/object/user.js"></script>
-    <script src="js/data/data_repository.js"></script>
+    <script type="module">
+        import message from "js/object/user.js";
+    </script>
+    <!-- <script src=""></script>
+    <script src="js/data/data_repository.js" ></script> -->
     <title>Document</title>
 </head>
 <body>
@@ -93,10 +95,12 @@
             <form id="loginForm">
                 <label for="fname">Email:</label><br>
                 <input type="email" id="email" class="InputContainer" name="fname" placeholder="enter email" required><br>
+                <span id="emailCheck"></span><br>
                 <label for="lname">Password:</label><br>
                 <input type="password" id="password" class="InputContainer" name="lname" placeholder="enter password" required><br>
-                 <button id="signIn">Sign In</button>
-                <a class="home" href="#">Forgot Your Password</a>
+                <span id="passwordCheck"></span><br>
+                <button id="signIn">Sign In</button>
+                <a class="home" href="forgotpassword.html">Forgot Password?</a>
             </form>
         </div>
 
