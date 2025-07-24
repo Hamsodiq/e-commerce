@@ -1,10 +1,16 @@
-const user = new User('Hamsodiq', 'tola@gmail.com', 'islahudeen', 'password123', '08146282838'); 
 
-const users = [user];
+function getUsers() {
+    let users =  JSON.parse(localStorage.getItem('users'));
+    console.log(users);
+    if(!users){
+        users = [];
+    }
+    return [];
+    // users;
+}
 
-let lastUserForgotPassowrdEmail = '';
-
-let loggedInUser;
-
-
-export {users, lastUserForgotPassowrdEmail, loggedInUser};
+function saveUser(userParam){
+ let users = getUsers();
+  users.push(userParam);
+  localStorage.setItem("users", JSON.stringify(users));
+}
