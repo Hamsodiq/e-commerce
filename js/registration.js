@@ -14,14 +14,14 @@ function validate(e) {
   // // console.log(users.length);
 
 
-  const newuser = users.find((user) => user.email === email);
+  const newuser = getUsers().find((user) => user.email === email);
   console.log(newuser);
   
     if (!newuser) {
       const newUserInfo = new User(fullName, email, address, password, phoneNo);
       console.log(newUserInfo);
-      users.push(newUserInfo);
-      
+      saveUser(newUserInfo)
+
       // respond with invalid login details
       console.log("Email is valid");
       registrationEmailCheck.innerHTML = 'Email addresses is valid';

@@ -21,8 +21,6 @@ window.onload=function(){
       inputCodeOutput.style.color = 'green';
       document.getElementById("codeInput").style.border = '1px solid #A2A6B0';
       document.getElementById("passwordPage").hidden = false;
-              console.log(lastUserForgotPassowrdEmail);
-
     }
   });  
 }
@@ -40,11 +38,19 @@ function newPasswordValidate(e) {
     return;
   } 
 
-  console.log(lastUserForgotPassowrdEmail);
-  const forgetPasswordUser = users.findIndex((user) => user.email === lastUserForgotPassowrdEmail);
-  console.log(forgetPasswordUser);
+  let lastUserMail = sessionStorage.getItem('lastUserForgotPasswordEmail')
+  console.log(lastUserMail);
+  const forgetPasswordUserIndex = getUsers().findIndex((user) => user.email === lastUserMail);
+
+  if(forgetPasswordUserIndex == -1){
+    console.log('cannot reset');
+    return;
+  } 
+
+  let forgotPasswordUser = getUsers()[forgetPasswordUserIndex];
+  console.log(forgotPasswordUser);
+  forgetPasswordUser.password = myNewPassword;
+
   
   
-
-
 }

@@ -8,18 +8,20 @@ function emailValidate(e) {
     const email = document.getElementById('email').value;
 
     const foundedUser = getUsers().find((user) => user.email === email);
+    console.log(foundedUser);
+    
 
     if (!foundedUser) { 
         // respond with invalid email:
-        email.innerHTML = 'Email address is not valid';
-        email.style.color = 'red';
+        emailAlert.innerHTML = 'Email address is not valid';
+        emailAlert.style.color = 'red';
     } else {
         // respond with valid email:
-        email.innerHTML = 'Email address is valid';
-        email.style.color = 'green';
+        emailAlert.innerHTML = 'Email address is valid';
+        emailAlert.style.color = 'green';
         // lastUserForgotPassowrdEmail = email;
         // load new page if email is valid:
         window.location.href = "newpassword.html";
+        sessionStorage.setItem('lastUserForgotPasswordEmail', email);
     }
-
 }
