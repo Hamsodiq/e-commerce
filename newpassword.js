@@ -40,17 +40,14 @@ function newPasswordValidate(e) {
 
   let lastUserMail = sessionStorage.getItem('lastUserForgotPasswordEmail')
   console.log(lastUserMail);
-  const forgetPasswordUserIndex = getUsers().findIndex((user) => user.email === lastUserMail);
 
+  let users = getUsers();
+  const forgetPasswordUserIndex = users.findIndex((user) => user.email === lastUserMail);
   if(forgetPasswordUserIndex == -1){
     console.log('cannot reset');
     return;
-  } 
+  }
 
-  let forgotPasswordUser = getUsers()[forgetPasswordUserIndex];
-  console.log(forgotPasswordUser);
-  forgetPasswordUser.password = myNewPassword;
-
-  
-  
+  users[forgetPasswordUserIndex].password = myNewPassword;
+  saveUsers(users);
 }

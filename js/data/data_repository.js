@@ -1,6 +1,5 @@
 function getUsers() {
     let users =  JSON.parse(localStorage.getItem('users'));
-    console.log(users);
     if(!users){
         users = [];
     }
@@ -10,7 +9,13 @@ function getUsers() {
 function saveUser(userParam){
   let users = getUsers();
   users.push(userParam);
-  localStorage.setItem("users", JSON.stringify(users));
+  saveUsers(users); // or localStorage.setItem("users", JSON.stringify(users));
 }
+
+function saveUsers(usersParam){
+ console.log(usersParam);
+ localStorage.setItem("users", JSON.stringify(usersParam));
+}
+
 
 
